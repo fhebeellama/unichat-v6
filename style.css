@@ -1,0 +1,1065 @@
+body{
+
+ 
+
+   margin:0;
+
+ 
+
+   font-family:Arial;
+
+ 
+
+   background:#ffd6ec;
+
+ 
+
+}
+
+ 
+
+/* HIDDEN */
+
+ 
+
+.hidden{
+
+ 
+
+   display:none;
+
+ 
+
+}
+
+ 
+
+/* LOGIN */
+
+ 
+
+.loginCard{
+
+ 
+
+   width:360px;
+
+ 
+
+   margin:auto;
+
+ 
+
+   margin-top:60px;
+
+ 
+
+   background:white;
+
+ 
+
+   padding:35px;
+
+ 
+
+   border-radius:35px;
+
+ 
+
+   box-shadow:0 0 25px rgba(0,0,0,0.08);
+
+ 
+
+}
+
+ 
+
+.loginCard h1{
+
+ 
+
+   text-align:center;
+
+ 
+
+   color:#ff4fa0;
+
+ 
+
+   margin-bottom:20px;
+
+ 
+
+}
+
+ 
+
+/* PROFILE PREVIEW */
+
+ 
+
+.profilePreview{
+
+ 
+
+   display:flex;
+
+ 
+
+   justify-content:center;
+
+ 
+
+   margin-bottom:20px;
+
+ 
+
+}
+
+ 
+
+.profilePreview img{
+
+ 
+
+   width:95px;
+
+ 
+
+   height:95px;
+
+ 
+
+   border-radius:50%;
+
+ 
+
+   background:#ffe4f2;
+
+ 
+
+   padding:8px;
+
+ 
+
+}
+
+ 
+
+/* INPUTS */
+
+ 
+
+.loginCard input{
+
+ 
+
+   width:100%;
+
+ 
+
+   padding:15px;
+
+ 
+
+   margin-top:14px;
+
+ 
+
+   border:none;
+
+ 
+
+   outline:none;
+
+ 
+
+   border-radius:20px;
+
+ 
+
+   background:#fff0f7;
+
+ 
+
+   box-sizing:border-box;
+
+ 
+
+   font-size:15px;
+
+ 
+
+}
+
+ 
+
+/* BUTTONS */
+
+ 
+
+.loginCard button{
+
+ 
+
+   width:100%;
+
+ 
+
+   padding:15px;
+
+ 
+
+   margin-top:14px;
+
+ 
+
+   border:none;
+
+ 
+
+   border-radius:20px;
+
+ 
+
+   background:#ff4fa0;
+
+ 
+
+   color:white;
+
+ 
+
+   font-size:16px;
+
+ 
+
+   cursor:pointer;
+
+ 
+
+   transition:0.2s;
+
+ 
+
+}
+
+ 
+
+.loginCard button:hover{
+
+ 
+
+   transform:scale(1.02);
+
+ 
+
+}
+
+ 
+
+/* CHAT */
+
+ 
+
+#chatBox{
+
+ 
+
+   display:flex;
+
+ 
+
+   flex-direction:column;
+
+ 
+
+   height:100vh;
+
+ 
+
+   background:#ffe8f4;
+
+ 
+
+}
+
+ 
+
+/* TOPBAR */
+
+ 
+
+.topbar{
+
+ 
+
+   display:flex;
+
+ 
+
+   justify-content:space-between;
+
+ 
+
+   align-items:center;
+
+ 
+
+   padding:18px 22px;
+
+ 
+
+   background:#ff4fa0;
+
+ 
+
+   color:white;
+
+ 
+
+   border-bottom-left-radius:25px;
+
+ 
+
+   border-bottom-right-radius:25px;
+
+ 
+
+}
+
+ 
+
+.leftTop{
+
+ 
+
+   display:flex;
+
+ 
+
+   gap:10px;
+
+ 
+
+}
+
+ 
+
+.leftTop button{
+
+ 
+
+   border:none;
+
+ 
+
+   background:white;
+
+ 
+
+   color:#ff4fa0;
+
+ 
+
+   padding:10px 16px;
+
+ 
+
+   border-radius:20px;
+
+ 
+
+   cursor:pointer;
+
+ 
+
+   font-weight:bold;
+
+ 
+
+}
+
+ 
+
+/* USERS */
+
+ 
+
+.usersBar{
+
+ 
+
+   display:flex;
+
+ 
+
+   gap:12px;
+
+ 
+
+   overflow-x:auto;
+
+ 
+
+   padding:15px;
+
+ 
+
+   background:#ffd9eb;
+
+ 
+
+}
+
+ 
+
+.usersBar::-webkit-scrollbar{
+
+ 
+
+   height:5px;
+
+ 
+
+}
+
+ 
+
+.usersBar::-webkit-scrollbar-thumb{
+
+ 
+
+   background:#ff8fc4;
+
+ 
+
+   border-radius:20px;
+
+ 
+
+}
+
+ 
+
+/* USERS LIST */
+
+ 
+
+#usersList{
+
+ 
+
+   display:flex;
+
+ 
+
+   gap:10px;
+
+ 
+
+}
+
+ 
+
+/* USER BUTTON */
+
+ 
+
+.userItem,
+
+.chatUser{
+
+ 
+
+   display:flex;
+
+ 
+
+   align-items:center;
+
+ 
+
+   gap:8px;
+
+ 
+
+   border:none;
+
+ 
+
+   background:white;
+
+ 
+
+   padding:12px 18px;
+
+ 
+
+   border-radius:30px;
+
+ 
+
+   cursor:pointer;
+
+ 
+
+   color:#ff4fa0;
+
+ 
+
+   font-weight:bold;
+
+ 
+
+   white-space:nowrap;
+
+ 
+
+}
+
+ 
+
+/* AVATAR */
+
+ 
+
+.userAvatar{
+
+ 
+
+   width:28px;
+
+ 
+
+   height:28px;
+
+ 
+
+   border-radius:50%;
+
+ 
+
+}
+
+ 
+
+/* CHAT TITLE */
+
+ 
+
+#chatTitle{
+
+ 
+
+   padding:16px;
+
+ 
+
+   font-weight:bold;
+
+ 
+
+   color:#ff4fa0;
+
+ 
+
+   background:#ffe0f0;
+
+ 
+
+   text-align:center;
+
+ 
+
+}
+
+ 
+
+/* MESSAGES */
+
+ 
+
+#messages{
+
+ 
+
+   flex:1;
+
+ 
+
+   overflow-y:auto;
+
+ 
+
+   padding:20px;
+
+ 
+
+}
+
+ 
+
+/* MESSAGE */
+
+ 
+
+.message{
+
+ 
+
+   max-width:72%;
+
+ 
+
+   background:white;
+
+ 
+
+   padding:14px;
+
+ 
+
+   border-radius:30px;
+
+ 
+
+   margin-bottom:14px;
+
+ 
+
+   box-shadow:0 0 8px rgba(0,0,0,0.05);
+
+ 
+
+}
+
+ 
+
+/* MY MESSAGE */
+
+ 
+
+.me{
+
+ 
+
+   margin-left:auto;
+
+ 
+
+   background:#ffb8d8;
+
+ 
+
+}
+
+ 
+
+/* MESSAGE TOP */
+
+ 
+
+.messageTop{
+
+ 
+
+   display:flex;
+
+ 
+
+   align-items:center;
+
+ 
+
+   gap:10px;
+
+ 
+
+   margin-bottom:8px;
+
+ 
+
+}
+
+ 
+
+/* MESSAGE AVATAR */
+
+ 
+
+.messageAvatar{
+
+ 
+
+   width:34px;
+
+ 
+
+   height:34px;
+
+ 
+
+   border-radius:50%;
+
+ 
+
+}
+
+ 
+
+/* MESSAGE TEXT */
+
+ 
+
+.messageText{
+
+ 
+
+   line-height:1.5;
+
+ 
+
+   word-wrap:break-word;
+
+ 
+
+}
+
+ 
+
+/* GIF */
+
+ 
+
+.chatImage{
+
+ 
+
+   width:220px;
+
+ 
+
+   border-radius:20px;
+
+ 
+
+   margin-top:10px;
+
+ 
+
+}
+
+ 
+
+/* TYPING */
+
+ 
+
+#typingStatus{
+
+ 
+
+   height:20px;
+
+ 
+
+   padding-left:20px;
+
+ 
+
+   color:#ff4fa0;
+
+ 
+
+   font-size:14px;
+
+ 
+
+   padding-bottom:5px;
+
+ 
+
+}
+
+ 
+
+/* SEND */
+
+ 
+
+.sendBox{
+
+ 
+
+   display:flex;
+
+ 
+
+   gap:10px;
+
+ 
+
+   padding:16px;
+
+ 
+
+   background:white;
+
+ 
+
+   border-top-left-radius:25px;
+
+ 
+
+   border-top-right-radius:25px;
+
+ 
+
+}
+
+ 
+
+.sendBox input{
+
+ 
+
+   flex:1;
+
+ 
+
+   border:none;
+
+ 
+
+   outline:none;
+
+ 
+
+   padding:15px;
+
+ 
+
+   border-radius:20px;
+
+ 
+
+   background:#fff0f7;
+
+ 
+
+}
+
+ 
+
+.sendBox button{
+
+ 
+
+   border:none;
+
+ 
+
+   background:#ff4fa0;
+
+ 
+
+   color:white;
+
+ 
+
+   padding:13px 18px;
+
+ 
+
+   border-radius:20px;
+
+ 
+
+   cursor:pointer;
+
+ 
+
+   font-weight:bold;
+
+ 
+
+}
+
+ 
+
+/* EMOJI */
+
+ 
+
+emoji-picker{
+
+ 
+
+   display:none;
+
+ 
+
+   width:100%;
+
+ 
+
+   height:300px;
+
+ 
+
+}
+
+ 
+
+/* DARK MODE */
+
+ 
+
+.dark{
+
+ 
+
+   background:#1e1e1e !important;
+
+ 
+
+}
+
+ 
+
+.dark #chatBox{
+
+ 
+
+   background:#121212;
+
+ 
+
+}
+
+ 
+
+.dark .topbar{
+
+ 
+
+   background:#b83280;
+
+ 
+
+}
+
+ 
+
+.dark .usersBar{
+
+ 
+
+   background:#1f1f1f;
+
+ 
+
+}
+
+ 
+
+.dark #chatTitle{
+
+ 
+
+   background:#1f1f1f;
+
+ 
+
+   color:white;
+
+ 
+
+}
+
+ 
+
+.dark .message{
+
+ 
+
+   background:#2a2a2a;
+
+ 
+
+   color:white;
+
+ 
+
+}
+
+ 
+
+.dark .me{
+
+ 
+
+   background:#b83280;
+
+ 
+
+}
+
+ 
+
+.dark .sendBox{
+
+ 
+
+   background:#1f1f1f;
+
+ 
+
+}
+
+ 
+
+.dark .sendBox input{
+
+ 
+
+   background:#2a2a2a;
+
+ 
+
+   color:white;
+
+ 
+
+}
+
+ 
+
+.dark .userItem,
+
+.dark .chatUser{
+
+ 
+
+   background:#2a2a2a;
+
+ 
+
+   color:white;
+
+ 
+
+}
+
+ 
+
+.dark #typingStatus{
+
+ 
+
+   color:#ff9ad0;
+
+ 
+
+}

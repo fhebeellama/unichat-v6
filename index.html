@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+ 
+
+<head>
+
+ 
+
+ <meta charset="UTF-8">
+
+ 
+
+ <meta name="viewport"
+
+       content="width=device-width, initial-scale=1.0">
+
+ 
+
+ <title>QpalsChat</title>
+
+ 
+
+ <link rel="stylesheet" href="style.css">
+
+ 
+
+ <script
+
+   type="module"
+
+   src="https://cdn.jsdelivr.net/npm/emoji-picker-element@^1/index.js">
+
+ </script>
+
+ 
+
+</head>
+
+ 
+
+<body>
+
+ 
+
+<div class="container">
+
+ 
+
+ <!-- LOGIN -->
+
+ 
+
+ <div id="loginBox" class="loginCard">
+
+ 
+
+   <h1>QpalsChat</h1>
+
+ 
+
+   <!-- PROFILE PREVIEW -->
+
+ 
+
+   <div class="profilePreview">
+
+ 
+
+     <img
+
+       id="previewAvatar"
+
+       src="https://api.dicebear.com/7.x/thumbs/svg?seed=Qpals"
+
+     >
+
+ 
+
+   </div>
+
+ 
+
+   <!-- INPUTS -->
+
+ 
+
+   <input
+
+     type="text"
+
+     id="username"
+
+     placeholder="Username"
+
+   >
+
+ 
+
+   <input
+
+     type="email"
+
+     id="email"
+
+     placeholder="Email"
+
+   >
+
+ 
+
+   <input
+
+     type="password"
+
+     id="password"
+
+     placeholder="Password"
+
+   >
+
+ 
+
+   <!-- BUTTONS -->
+
+ 
+
+   <button id="signupBtn">
+
+     ✨ Sign Up
+
+   </button>
+
+ 
+
+   <button id="loginBtn">
+
+     💖 Login
+
+   </button>
+
+ 
+
+ </div>
+
+ 
+
+ <!-- CHAT -->
+
+ 
+
+ <div id="chatBox" class="hidden">
+
+ 
+
+   <!-- TOPBAR -->
+
+ 
+
+   <div class="topbar">
+
+ 
+
+     <h2>QpalsChat</h2>
+
+ 
+
+     <div class="topButtons">
+
+ 
+
+       <button id="darkBtn">
+
+         🌙 Dark
+
+       </button>
+
+ 
+
+       <button id="logoutBtn">
+
+         🚪 Logout
+
+       </button>
+
+ 
+
+     </div>
+
+ 
+
+   </div>
+
+ 
+
+   <!-- USERS BAR -->
+
+ 
+
+   <div class="usersBar">
+
+ 
+
+     <!-- GROUP CHAT -->
+
+ 
+
+     <button
+
+       id="groupBtn"
+
+       class="chatUser">
+
+ 
+
+       🌸 Group Chat
+
+ 
+
+     </button>
+
+ 
+
+     <!-- USERS -->
+
+ 
+
+     <div id="usersList"></div>
+
+ 
+
+   </div>
+
+ 
+
+   <!-- CHAT TITLE -->
+
+ 
+
+   <div id="chatTitle">
+
+ 
+
+     🌸 Group Chat
+
+ 
+
+   </div>
+
+ 
+
+   <!-- MESSAGES -->
+
+ 
+
+   <div id="messages"></div>
+
+ 
+
+   <!-- TYPING -->
+
+ 
+
+   <div id="typingStatus"></div>
+
+ 
+
+   <!-- EMOJI PICKER -->
+
+ 
+
+   <emoji-picker id="picker"></emoji-picker>
+
+ 
+
+   <!-- SEND BOX -->
+
+ 
+
+   <div class="sendBox">
+
+ 
+
+     <input
+
+       type="text"
+
+       id="messageInput"
+
+       placeholder="Type message..."
+
+     >
+
+ 
+
+     <button id="gifBtn">
+
+       🎞 GIF
+
+     </button>
+
+ 
+
+     <button id="emojiBtn">
+
+       😊
+
+     </button>
+
+ 
+
+     <button id="sendBtn">
+
+       💌 Send
+
+     </button>
+
+ 
+
+   </div>
+
+ 
+
+ </div>
+
+ 
+
+</div>
+
+ 
+
+<script type="module" src="app.js"></script>
+
+ 
+
+</body>
+
+</html>
